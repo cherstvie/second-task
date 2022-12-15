@@ -1,6 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export const CartTotal = () => {
-    const [count, setCount] = useState(0)
-    return <div>total : {count}</div>
+export const CartTotal = ({ currency, total }) => {
+    switch (currency) {
+        case 'USD':
+            total = total * 1.05
+            break
+        case 'UAH':
+            total = total * 41
+            break
+        case 'ZL':
+            total = total * 5.8
+            break
+        default:
+            total = total
+            break
+    }
+
+    return <div>total : {total}</div>
 }

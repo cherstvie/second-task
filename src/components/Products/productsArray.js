@@ -1,20 +1,20 @@
 export const productsArray = [
     {
+        id: 1,
         name: 'iPhone 12',
         description: 'This is iPhone 12 ....',
-        currency: 'EUR',
         price: 750,
     },
     {
+        id: 2,
         name: 'iPhone 8',
         description: 'This is iPhone 8 ....',
-        currency: 'EUR',
         price: 850,
     },
     {
+        id: 3,
         name: 'iPhone X',
         description: 'This is iPhone X ....',
-        currency: 'EUR',
         price: 1250,
     },
 ]

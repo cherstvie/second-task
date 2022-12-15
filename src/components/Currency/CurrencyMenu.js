@@ -1,12 +1,23 @@
 import React from 'react'
 
-export const CurrencyMenu = () => {
+export const CurrencyMenu = ({ setCurrency }) => {
+    const changeCurrency = (curr) => {
+        setCurrency(curr)
+    }
     return (
         <div>
-            <button>USD</button>
-            <button>EUR</button>
-            <button>UAH</button>
-            <button>ZL</button>
+            <button type="button" onClick={() => changeCurrency('USD')}>
+                USD
+            </button>
+            <button type="button" onClick={() => changeCurrency('EUR')}>
+                EUR
+            </button>
+            <button type="button" onClick={() => changeCurrency('UAH')}>
+                UAH
+            </button>
+            <button type="button" onClick={() => changeCurrency('ZL')}>
+                ZL
+            </button>
         </div>
     )
 }
